@@ -1,0 +1,31 @@
+Classe abstrata -> Combatente 
+
+Atributos: Nome, Nível, Pontos de vida
+métodos: atacar, receber dano
+Lógica de morte: se o pv chegar a zero, morre.
+
+Subclasses -> Guardião de Ferro (Tanque)
+
+//pontos de vida deve ser alto pois é carta tanque, então 200 pv. Ataque 30 de dano.
+Atributos: vigor (Vigor vai de 0 a 100, agrega 10 a cada 2 segundo)
+métodos: bloqueio (quando o vigor chegar a 100, anula por 2 segundos os danos recebidos)
+
+Subclasses -> Arcanista (mago)
+
+//ponto de vida baixo, 100pv.
+Atributos: Magia, começa com 100 de magia. A cada ataque perde 20 de magia. Enquanto tiver magia seu ataque vale 100, quando sem magia vale 20. Quando a magia zerar, a cada ataque feito ele recupera 20 de magia até chegar em 100 novamente e o ciclo continua.
+
+Subclasses -> Caçador  
+
+//pontos de vida muito baixo, 50pv. A cada 3 golpes, 1 é critico e dobra o valor do dano. No caso sua habilidade é  precisão no golpe. Eles são os mais ágeis da arena.
+Atributos: 
+métodos: bloqueio
+
+
+Classe ARENA 
+
+Listas dinâmicas para a equipe A e B. Aceitando qualquer quantidade de lutadores.
+Ciclos de turno: A cada rodada cada personagem que ainda estiver vivo fará uma ação ofensiva.
+Ataque: O ataque é feito de forma aleatória, não sendo possível escolher qual opon
+
+Classe 
