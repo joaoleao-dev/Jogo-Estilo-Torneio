@@ -4,7 +4,7 @@ public class Cacador extends Combatente {
     private Random random;
 
     public Cacador(String nome, int XP) {
-        super(nome, XP,  80 + (XP * 5));
+        super(nome, XP, 50);
         this.random = new Random();
     }
 
@@ -24,3 +24,4 @@ public class Cacador extends Combatente {
     }
 
 }
+
