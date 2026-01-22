@@ -6,11 +6,11 @@ import java.util.Random;
 
 public class Arena {
 
-    // Atributos: As duas equipes opostas [cite: 47]
+    //As duas equipes
     private List<Combatente> equipeA;
     private List<Combatente> equipeB;
     
-    // Utilitário para escolher alvos aleatórios [cite: 52]
+    //Escolhe alvo aleatório 
     private Random geradorAleatorio;
 
     // Construtor: Inicializa as listas e o random
@@ -20,8 +20,7 @@ public class Arena {
         this.geradorAleatorio = new Random();
     }
 
-    // Método para adicionar combatentes (setup inicial)
-    // Permite adicionar quantos quiser (1v1 ou 100v100) [cite: 48]
+    // Método para adicionar combatentes
     public void adicionarCombatente(Combatente c, String lado) {
         if (lado.equalsIgnoreCase("A")) {
             equipeA.add(c);
@@ -32,7 +31,7 @@ public class Arena {
         }
     }
 
-    // O "Motor" do jogo: Loop principal que roda até alguém ganhar [cite: 57]
+    //Loop principal que roda até alguém ganhar
     public void iniciarBatalha() {
         int rodada = 1;
         boolean batalhaAtiva = true;
@@ -41,8 +40,6 @@ public class Arena {
 
         while (batalhaAtiva) {
             System.out.println("\n--- Rodada " + rodada + " ---");
-            
-            // Lógica da rodada (turno de cada um)
             executarRodada();
 
             // Verifica se alguém venceu após a rodada
@@ -56,20 +53,17 @@ public class Arena {
 
     // Lógica interna de uma rodada
     private void executarRodada() {
-        // Todo mundo ataca! (Aqui você precisará iterar sobre as duas equipes)
-        // Dica: Crie uma lista unificada ou ordene por iniciativa se quiser ser criativo
         
-        // Exemplo de lógica para a Equipe A atacar a B:
+
         for (Combatente atacante : equipeA) {
-            if (atacante.estaVivo()) { // [cite: 50]
-                Combatente alvo = selecionarAlvoAleatorio(equipeB); // [cite: 52]
+            if (atacante.estaVivo()) { 
+                Combatente alvo = selecionarAlvoAleatorio(equipeB); 
                 if (alvo != null) {
-                    atacante.atacar(alvo); // Polimorfismo acontece aqui!
+                    atacante.atacar(alvo); 
                 }
             }
         }
 
-        // Repita a lógica para a Equipe B atacar a A...
         for (Combatente atacante : equipeB) {
             if (atacante.estaVivo()) {
                  Combatente alvo = selecionarAlvoAleatorio(equipeA);
@@ -80,7 +74,7 @@ public class Arena {
         }
     }
 
-    // Seleciona um alvo vivo aleatoriamente na equipe inimiga [cite: 52]
+    // Seleciona um alvo vivo aleatoriamente na equipe inimiga
     private Combatente selecionarAlvoAleatorio(List<Combatente> equipeInimiga) {
         // Filtra apenas os vivos
         List<Combatente> vivos = new ArrayList<>();
@@ -100,7 +94,7 @@ public class Arena {
         return vivos.get(indiceSorteado);
     }
 
-    // Verifica se alguma equipe foi totalmente derrotada [cite: 58]
+    // Verifica se alguma equipe foi totalmente derrotada
     private boolean verificarVitoria() {
         boolean aVivo = false;
         boolean bVivo = false;
@@ -126,4 +120,5 @@ public class Arena {
         return false; // Jogo continua
     }
 }
+
 
