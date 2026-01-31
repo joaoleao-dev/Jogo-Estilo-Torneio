@@ -73,3 +73,4 @@ public class BatalhaTeste {
         assertEquals(140, orc.getPV(), "O dano deve respeitar a fórmula XP * 3");
     }
 }
+
