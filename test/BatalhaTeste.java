@@ -1,5 +1,3 @@
-package com.mycompany.jogo.rpg.poo;
-
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
@@ -73,4 +71,5 @@ public class BatalhaTeste {
         assertEquals(140, orc.getPV(), "O dano deve respeitar a fórmula XP * 3");
     }
 }
+
 
