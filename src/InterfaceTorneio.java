@@ -1,5 +1,3 @@
-package com.mycompany.jogo.rpg.poo;
-
 import javax.swing.*;
 import java.awt.*;
 
@@ -221,4 +219,5 @@ public class InterfaceTorneio extends JFrame {
         btnCriar.setEnabled(true);
         renderizarEquipes();
     }
+
 }
