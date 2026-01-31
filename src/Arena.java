@@ -1,4 +1,3 @@
-package com.mycompany.jogo.rpg.poo;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -83,3 +82,4 @@ public class Arena {
         return false;
     }
 }
+
