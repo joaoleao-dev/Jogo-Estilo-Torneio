@@ -7,11 +7,11 @@ public abstract class Combatente{
     public Combatente (String nome, int XP, int pvMaximo) {
         this.nome = nome;
         this.XP = XP;
-        this.pvMaximo = pvMaximo
+        this.pvMaximo = pvMaximo;
         this.PV = pvMaximo;
     }
     
-    public abstract void atacar(Combatente alvo);
+    public abstract String atacar(Combatente alvo);
 
     public boolean estaVivo(){
         return this.PV > 0;
@@ -25,7 +25,7 @@ public abstract class Combatente{
     public String getNome(){
         return this.nome;
     }
-    public int PV(){
+    public int getPV(){
         return this.PV;
     }
     public int getPvMaximo() {
