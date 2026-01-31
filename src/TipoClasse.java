@@ -1,4 +1,3 @@
-package com.mycompany.jogo.rpg.poo; 
 import java.util.function.BiFunction;
 
 public enum TipoClasse {
@@ -23,4 +22,5 @@ public enum TipoClasse {
     public String toString() {
         return descricao;
     }
+
 }
