@@ -28,3 +28,4 @@ public class Arcanista extends Combatente {
         return "🌀 " + this.nome + " está sem magia! Realizou um ataque fraco e meditou.\n";
     }
 }
+
