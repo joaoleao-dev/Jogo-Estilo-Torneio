@@ -1,4 +1,3 @@
-package com.mycompany.jogo.rpg.poo; 
 import javax.swing.SwingUtilities;
 
 public class Main {
@@ -11,4 +10,5 @@ public class Main {
             tela.setLocationRelativeTo(null); // Centraliza na tela
         });
     }
+
 }
