@@ -3,7 +3,7 @@
 Um simulador de combate em turnos desenvolvido em Java, utilizando a biblioteca **Swing** para a interface gráfica. O projeto aplica conceitos fundamentais de Programação Orientada a Objetos para gerenciar diferentes classes de combatentes e mecânicas de batalha.
 
 ## 👥 Desenvolvedores
-* **João Gustavo Bittencourt Costa**
+* **João Gustavo Costa Bittencourt Santos**
 * **João Vitor Vital Leão**
 
 ---
